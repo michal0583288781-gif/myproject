@@ -1,0 +1,113 @@
+/* about.css - דף צור קשר */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.7;
+    direction: rtl;
+}
+
+/* Header */
+.header {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 40px;
+
+    /* הוספת STICKY */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* הוספת FLEX לניווט */
+.header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header nav a {
+    color: #ecf0f1;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header nav a:hover {
+    color: #f39c12;
+}
+
+/* Form Section */
+.section {
+    padding: 60px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+
+    /* FLEX כדי למרכז את התוכן בצורה יפה */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    /* FLEX פנימי נוסף (אופציונלי) */
+    width: 100%;
+}
+
+/* Inputs & Buttons */
+.form input,
+.form textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    resize: none;
+}
+
+.form button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #f39c12;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+
+    /* הוספת FLEX לפוטר */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

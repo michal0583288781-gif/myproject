@@ -1,0 +1,113 @@
+/* destinations.css - דף יעדים */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+    direction: rtl;
+}
+
+/* Header */
+.header {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 40px;
+
+    /* הוספת STICKY */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* הוספת FLEX לניווט */
+.header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header nav a {
+    color: #ecf0f1;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header nav a:hover {
+    color: #e67e22;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    /* הוספת FLEX לתוכן הכרטיס */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+.footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+
+    /* הוספת FLEX לפוטר */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,0 +1,226 @@
+/* index.css - דף הבית */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fefefe;
+    color: #333;
+    line-height: 1.7;
+    direction: rtl;
+}
+
+/* Header */
+.header {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 40px;
+
+    /* הוספת STICKY */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+/* הוספת FLEX לניווט */
+.header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header nav a:hover {
+    color: #e67e22;
+}
+
+/* Hero */
+.hero {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #2c3e50;
+    text-align: center;
+    padding: 100px 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+
+    /* FLEX למרכז תוכן */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 3rem;
+}
+
+/* Section */
+.section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.section p {
+    font-size: 3rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+
+    /* FLEX בפוטר */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* destinations.css - דף יעדים */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+    direction: rtl;
+}
+
+/* Header */
+.header {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 40px;
+
+    /* הוספת STICKY */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* הוספת FLEX לניווט */
+.header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header nav a {
+    color: #ecf0f1;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header nav a:hover {
+    color: #e67e22;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    /* הוספת FLEX לתוכן הכרטיס */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+.footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+
+    /* הוספת FLEX לפוטר */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
